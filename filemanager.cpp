@@ -43,7 +43,7 @@ bool FileManager::saveBooksToFile(Library& library) {
     fs::create_directories(kDataDir);
     ofstream out(kBooksPath, ios::trunc);
     if (!out) {
-        cerr << "Erreur: impossible d'ouvrir " << kBooksPath << " en écriture.\n";
+        cerr << "Erreur: Impossible d'ouvrir " << kBooksPath << " en écriture.\n";
         return false;
     }
     for (Book* b : library.getAllBooks()) {
@@ -56,7 +56,7 @@ bool FileManager::loadBooksFromFile(Library& library) {
     if (!fs::exists(kBooksPath)) return true;
     ifstream in(kBooksPath);
     if (!in) {
-        cerr << "Erreur: impossible d'ouvrir " << kBooksPath << " en lecture.\n";
+        cerr << "Erreur: Impossible d'ouvrir " << kBooksPath << " en lecture.\n";
         return false;
     }
     string line;
@@ -74,7 +74,7 @@ bool FileManager::saveUsersToFile(Library& library) {
     fs::create_directories(kDataDir);
     ofstream out(kUsersPath, ios::trunc);
     if (!out) {
-        cerr << "Erreur: impossible d'ouvrir " << kUsersPath << " en écriture.\n";
+        cerr << "Erreur: Impossible d'ouvrir " << kUsersPath << " en écriture.\n";
         return false;
     }
     for (User* u : library.getAllUsers()) {
@@ -116,5 +116,5 @@ void FileManager::createBackup() {
         fs::copy_file(kUsersPath, kUsersPath.string() + ".backup",
                       fs::copy_options::overwrite_existing);
     }
-    cout << "Fichiers de sauvegarde créés dans " << kDataDir << "\n";
+    cout << "Les fichiers de sauvegarde ont été créés dans " << kDataDir << "\n";
 }

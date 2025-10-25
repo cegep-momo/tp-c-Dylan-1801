@@ -27,7 +27,7 @@ void Book::returnBook(){
     isAvailable = true;
     borrowerName.clear();
 }
-
+// Représentation textuelle du livre
 string Book::toString() const{
     ostringstream os;
     os << "Titre: "  << title
@@ -44,7 +44,7 @@ string Book::toFileFormat() const {
     os << title << '|' << author << '|' << isbn << '|' << (isAvailable?1:0) << '|' << borrowerName;
     return os.str();
 }
-
+// format pour le book:
 void Book::fromFileFormat(const string& line){
     string av;
     stringstream ss(line);

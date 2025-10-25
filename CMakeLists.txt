@@ -17,8 +17,10 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_EXTENSIONS NO
 )
 
+
 # flag pour tous les warnings possible
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic)
+
 
 # Pour definir le chemin du dossier data
 target_compile_definitions(bibliotheque PRIVATE
