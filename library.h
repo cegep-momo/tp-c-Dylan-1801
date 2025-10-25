@@ -27,6 +27,10 @@ public:
     vector<Book*> searchBooksByAuthor(const string& author);
     vector<Book*> getAvailableBooks();
     vector<Book*> getAllBooks();
+    // Pour vérifier les doublons quand on ajoute un livre
+     bool hasDuplicate(const std::string& title,
+                      const std::string& author,
+                      const std::string& isbn) const;
     
     // User management
     void addUser(const User& user);

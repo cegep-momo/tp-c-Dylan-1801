@@ -203,3 +203,50 @@ int Library::getAvailableBookCount() const {
         });
 }
 int Library::getCheckedOutBookCount() const { return getTotalBooks() - getAvailableBookCount(); }
+
+#include <cctype>
+#include <sstream>
+
+// fonctions utilitaires pour la normalisation
+static std::string trim(const std::string& s) {
+    size_t start = 0, end = s.size();
+    while (start < end && std::isspace((unsigned char)s[start])) ++start;
+    while (end > start && std::isspace((unsigned char)s[end - 1])) --end;
+    return s.substr(start, end - start);
+}
+
+static std::string toLower(const std::string& s) {
+    std::string res = s;
+    std::transform(res.begin(), res.end(), res.begin(),
+                   [](unsigned char c) { return std::tolower(c); });
+    return res;
+}
+
+static std::string normalizeISBN(const std::string& isbn) {
+    std::string res;
+    for (char c : isbn)
+        if (std::isdigit((unsigned char)c) || c == 'X' || c == 'x')
+            res.push_back(c);
+    return res;
+}
+
+// Vérifie si un livre avec même titre + auteur + ISBN existe déjà
+bool Library::hasDuplicate(const std::string& title,
+                           const std::string& author,
+                           const std::string& isbn) const {
+    std::string tNorm = toLower(trim(title));
+    std::string aNorm = toLower(trim(author));
+    std::string iNorm = normalizeISBN(isbn);
+// pour chaque livre dans la bibliothèque
+    for (const auto& b : books) {
+        // si titre, auteur et ISBN correspondent
+        if (toLower(trim(b->getTitle())) == tNorm &&
+            toLower(trim(b->getAuthor())) == aNorm &&
+            normalizeISBN(b->getISBN()) == iNorm) {
+                // doublon trouvé
+            return true;
+        }
+    }
+    // pas de doublon trouvé
+    return false;
+}
