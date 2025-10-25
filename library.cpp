@@ -22,8 +22,8 @@ bool Library::removeBook(const string& isbn) {
     
     if (it != books.end()) {
         books.erase(it);
-        return true;
-    }
+    return true;
+}
     return false;
 }
 
@@ -51,6 +51,10 @@ vector<Book*> Library::searchBooksByTitle(const string& title) {
             results.push_back(book.get());
         }
     }
+    std::sort(results.begin(), results.end(), [](const Book* a, const Book* b){
+    if (a->getTitle() == b->getTitle()) return a->getAuthor() < b->getAuthor();
+    return a->getTitle() < b->getTitle();
+    });
     return results;
 }
 
@@ -68,6 +72,10 @@ vector<Book*> Library::searchBooksByAuthor(const string& author) {
             results.push_back(book.get());
         }
     }
+    std::sort(results.begin(), results.end(), [](const Book* a, const Book* b){
+    if (a->getTitle() == b->getTitle()) return a->getAuthor() < b->getAuthor();
+    return a->getTitle() < b->getTitle();
+    });
     return results;
 }
 
@@ -131,8 +139,8 @@ bool Library::checkOutBook(const string& isbn, const string& userId) {
 // Return book
 bool Library::returnBook(const string& isbn) {
     Book* book = findBookByISBN(isbn);
-    
-    if (book && !book->getAvailability()) {
+
+        if (book && !book->getAvailability()) {
         // Find the user who borrowed this book
         for (auto& user : users) {
             if (user->hasBorrowedBook(isbn)) {
@@ -152,28 +160,49 @@ void Library::displayAllBooks() {
         cout << "Aucun livre dans la bibliothèque.\n";
         return;
     }
-    
-    cout << "\n=== TOUS LES LIVRES ===\n";
-    for (size_t i = 0; i < books.size(); ++i) {
+
+    // collecter les pointeurs des livres
+    std::vector<const Book*> v;
+    v.reserve(books.size());
+    for (const auto& uptr : books) v.push_back(uptr.get());
+
+    // Tri: titre asc + auteur asc
+    std::sort(v.begin(), v.end(), [](const Book* a, const Book* b){
+        if (a->getTitle() == b->getTitle()) return a->getAuthor() < b->getAuthor();
+        return a->getTitle() < b->getTitle();
+    });
+
+    cout << "\n=== TOUS LES LIVRES (triés par titre, puis auteur) ===\n";
+    for (size_t i = 0; i < v.size(); ++i) {
         cout << "\nLivre " << (i + 1) << " :\n";
-        cout << books[i]->toString() << "\n";
+        cout << v[i]->toString() << "\n";
         cout << "-------------------------\n";
     }
 }
 
 // Display available books
 void Library::displayAvailableBooks() {
-    auto available = getAvailableBooks();
-    
-    if (available.empty()) {
+    // Collecter les pointeurs des livres disponibles
+    std::vector<const Book*> v;
+    v.reserve(books.size());
+    for (const auto& uptr : books) {
+        if (uptr->getAvailability()) v.push_back(uptr.get());
+    }
+
+    if (v.empty()) {
         cout << "Aucun livre disponible pour emprunt.\n";
         return;
     }
-    
-    cout << "\n=== LIVRES DISPONIBLES ===\n";
-    for (size_t i = 0; i < available.size(); ++i) {
+    // Tri: titre asc + puis auteur asc
+    std::sort(v.begin(), v.end(), [](const Book* a, const Book* b){
+        if (a->getTitle() == b->getTitle()) return a->getAuthor() < b->getAuthor();
+        return a->getTitle() < b->getTitle();
+    });
+
+    cout << "\n=== LIVRES DISPONIBLES (triés par titre, puis auteur) ===\n";
+    for (size_t i = 0; i < v.size(); ++i) {
         cout << "\nLivre " << (i + 1) << " :\n";
-        cout << available[i]->toString() << "\n";
+        cout << v[i]->toString() << "\n";
         cout << "---------------------------\n";
     }
 }
@@ -193,7 +222,6 @@ void Library::displayAllUsers() {
     }
 }
 
-
 // Statistics
 int Library::getTotalBooks() const { return books.size(); }
 int Library::getAvailableBookCount() const {
@@ -203,50 +231,3 @@ int Library::getAvailableBookCount() const {
         });
 }
 int Library::getCheckedOutBookCount() const { return getTotalBooks() - getAvailableBookCount(); }
-
-#include <cctype>
-#include <sstream>
-
-// fonctions utilitaires pour la normalisation
-static std::string trim(const std::string& s) {
-    size_t start = 0, end = s.size();
-    while (start < end && std::isspace((unsigned char)s[start])) ++start;
-    while (end > start && std::isspace((unsigned char)s[end - 1])) --end;
-    return s.substr(start, end - start);
-}
-
-static std::string toLower(const std::string& s) {
-    std::string res = s;
-    std::transform(res.begin(), res.end(), res.begin(),
-                   [](unsigned char c) { return std::tolower(c); });
-    return res;
-}
-
-static std::string normalizeISBN(const std::string& isbn) {
-    std::string res;
-    for (char c : isbn)
-        if (std::isdigit((unsigned char)c) || c == 'X' || c == 'x')
-            res.push_back(c);
-    return res;
-}
-
-// Vérifie si un livre avec même titre + auteur + ISBN existe déjà
-bool Library::hasDuplicate(const std::string& title,
-                           const std::string& author,
-                           const std::string& isbn) const {
-    std::string tNorm = toLower(trim(title));
-    std::string aNorm = toLower(trim(author));
-    std::string iNorm = normalizeISBN(isbn);
-// pour chaque livre dans la bibliothèque
-    for (const auto& b : books) {
-        // si titre, auteur et ISBN correspondent
-        if (toLower(trim(b->getTitle())) == tNorm &&
-            toLower(trim(b->getAuthor())) == aNorm &&
-            normalizeISBN(b->getISBN()) == iNorm) {
-                // doublon trouvé
-            return true;
-        }
-    }
-    // pas de doublon trouvé
-    return false;
-}
