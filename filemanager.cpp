@@ -1,9 +1,26 @@
 #include <fstream>
 #include <iostream>
 #include <filesystem>
+#include <sstream>
 #include "filemanager.h"
+#include "book.h"
+#include "user.h"
 
 using namespace std;
+namespace fs = std::filesystem;
+
+
+#ifdef DATA_DIR
+static const fs::path kDataDir = fs::path(DATA_DIR);
+#else
+
+#warning "DATA_DIR not defined by CMake; falling back to ./data"
+static const fs::path kDataDir = fs::path("./data");
+#endif
+
+static const fs::path kBooksPath = kDataDir / "books.txt";
+static const fs::path kUsersPath = kDataDir / "users.txt";
+
 
 // Constructor
 FileManager::FileManager(const string& booksFile, const string& usersFile)
@@ -16,108 +33,88 @@ bool FileManager::saveLibraryData(Library& library) {
 
 // Load all library data
 bool FileManager::loadLibraryData(Library& library) {
-    bool booksLoaded = loadBooksFromFile(library);
-    bool usersLoaded = loadUsersFromFile(library);
-    return booksLoaded || usersLoaded; // Return true if at least one file was loaded
+    bool ok = true;
+    ok = loadBooksFromFile(library) && ok;
+    ok = loadUsersFromFile(library) && ok;
+    return ok;
 }
-
 // Save books to file
 bool FileManager::saveBooksToFile(Library& library) {
-    ofstream file(booksFileName);
-    if (!file.is_open()) {
-        cout << "Erreur : Impossible d'ouvrir " << booksFileName << " en écriture.\n";
+    fs::create_directories(kDataDir);
+    ofstream out(kBooksPath, ios::trunc);
+    if (!out) {
+        cerr << "Erreur: impossible d'ouvrir " << kBooksPath << " en écriture.\n";
         return false;
     }
-    
-    auto books = library.getAllBooks();
-    for (Book* book : books) {
-        file << book->toFileFormat() << "\n";
+    for (Book* b : library.getAllBooks()) {
+        out << b->toFileFormat() << '\n';
     }
-    
-    file.close();
+    return true;
+}
+// Load books from file
+bool FileManager::loadBooksFromFile(Library& library) {
+    if (!fs::exists(kBooksPath)) return true;
+    ifstream in(kBooksPath);
+    if (!in) {
+        cerr << "Erreur: impossible d'ouvrir " << kBooksPath << " en lecture.\n";
+        return false;
+    }
+    string line;
+    while (getline(in, line)) {
+        if (line.empty()) continue;
+        Book b;
+        b.fromFileFormat(line);
+        library.addBook(b);
+    }
     return true;
 }
 
 // Save users to file
 bool FileManager::saveUsersToFile(Library& library) {
-    ofstream file(usersFileName);
-    if (!file.is_open()) {
-        cout << "Erreur : Impossible d'ouvrir " << usersFileName << " en écriture.\n";
+    fs::create_directories(kDataDir);
+    ofstream out(kUsersPath, ios::trunc);
+    if (!out) {
+        cerr << "Erreur: impossible d'ouvrir " << kUsersPath << " en écriture.\n";
         return false;
     }
-    
-    auto users = library.getAllUsers();
-    for (User* user : users) {
-        file << user->toFileFormat() << "\n";
+    for (User* u : library.getAllUsers()) {
+        out << u->toFileFormat() << '\n';
     }
-    
-    file.close();
-    return true;
-}
-
-// Load books from file
-bool FileManager::loadBooksFromFile(Library& library) {
-    ifstream file(booksFileName);
-    if (!file.is_open()) {
-        cout << "Aucun fichier de livres existant trouvé. Démarrage avec une bibliothèque vide.\n";
-        return false;
-    }
-    
-    string line;
-    int count = 0;
-    while (getline(file, line)) {
-        if (!line.empty()) {
-            Book book;
-            book.fromFileFormat(line);
-            library.addBook(book);
-            count++;
-        }
-    }
-    
-    file.close();
-    cout << "Chargé " << count << " livre(s) depuis le fichier.\n";
     return true;
 }
 
 // Load users from file
 bool FileManager::loadUsersFromFile(Library& library) {
-    ifstream file(usersFileName);
-    if (!file.is_open()) {
-        cout << "Aucun fichier d'utilisateurs existant trouvé. Démarrage sans utilisateurs enregistrés.\n";
+    if (!fs::exists(kUsersPath)) return true;
+    ifstream in(kUsersPath);
+    if (!in) {
+        cerr << "Erreur: impossible d'ouvrir " << kUsersPath << " en lecture.\n";
         return false;
     }
-    
     string line;
-    int count = 0;
-    while (getline(file, line)) {
-        if (!line.empty()) {
-            User user;
-            user.fromFileFormat(line);
-            library.addUser(user);
-            count++;
-        }
+    while (getline(in, line)) {
+        if (line.empty()) continue;
+        User u;
+        u.fromFileFormat(line);
+        library.addUser(u);
     }
-    
-    file.close();
-    cout << "Chargé " << count << " utilisateur(s) depuis le fichier.\n";
     return true;
 }
 
 // Check if file exists
 bool FileManager::fileExists(const string& filename) {
-    ifstream file(filename);
-    return file.good();
+    return fs::exists(kDataDir / filename);
 }
-
 // Create backup
 void FileManager::createBackup() {
-    if (fileExists(booksFileName)) {
-        filesystem::copy_file(booksFileName, booksFileName + ".backup");
+    fs::create_directories(kDataDir);
+    if (fs::exists(kBooksPath)) {
+        fs::copy_file(kBooksPath, kBooksPath.string() + ".backup",
+                      fs::copy_options::overwrite_existing);
     }
-    
-    if (fileExists(usersFileName)) {
-        filesystem::copy_file(usersFileName, usersFileName + ".backup");
+    if (fs::exists(kUsersPath)) {
+        fs::copy_file(kUsersPath, kUsersPath.string() + ".backup",
+                      fs::copy_options::overwrite_existing);
     }
-    
-    cout << "Fichiers de sauvegarde créés.\n";
+    cout << "Fichiers de sauvegarde créés dans " << kDataDir << "\n";
 }
