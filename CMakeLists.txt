@@ -7,7 +7,8 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     library.cpp
     user.cpp
     filemanager.cpp
-    book.cpp 
+    book.cpp
+    logactivity.cpp
 )
 
 # Specifie qu'on veut la version C++17 du langage

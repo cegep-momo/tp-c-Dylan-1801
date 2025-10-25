@@ -75,16 +75,14 @@ int main() {
 
                 if (library.hasDuplicate(title, author, isbn)) {
                     cout << "Erreur : un doublon détecté (même titre, auteur et ISBN).\n";
-                } else if (library.findBookByISBN(isbn)) {
-                    cout << "Erreur : Un livre avec l'ISBN " << isbn << " existe déjà.\n";
                 } else {
                     Book newBook(title, author, isbn);
                     library.addBook(newBook);
                     cout << "Livre ajouté avec succès !\n";
+                }
+                pauseForInput();
+                break;
             }
-            pauseForInput();
-            break;
-        }
 
             
             case 2: { // Remove Book
