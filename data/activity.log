@@ -1,0 +1,275 @@
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070612758|title=Le Petit Prince|author=Antoine de Saint-Exupéry
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253096337|title=Les Misérables|author=Victor Hugo
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360024|title=L'Étranger|author=Albert Camus
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070413119|title=Madame Bovary|author=Gustave Flaubert
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070411326|title=Le Rouge et le Noir|author=Stendhal
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253004226|title=Germinal|author=Émile Zola
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253085119|title=Le Père Goriot|author=Honoré de Balzac
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380015|title=Candide|author=Voltaire
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070323087|title=Les Fleurs du mal|author=Charles Baudelaire
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253002864|title=Notre-Dame de Paris|author=Victor Hugo
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253004233|title=L'Assommoir|author=Émile Zola
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005070|title=Bel-Ami|author=Guy de Maupassant
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380763|title=Le Malade imaginaire|author=Molière
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380800|title=Phèdre|author=Jean Racine
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380848|title=Le Cid|author=Pierre Corneille
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380770|title=Tartuffe|author=Molière
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380787|title=Dom Juan|author=Molière
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380817|title=Andromaque|author=Jean Racine
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380855|title=Le Barbier de Séville|author=Beaumarchais
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380824|title=Britannicus|author=Jean Racine
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360031|title=La Princesse de Clèves|author=Madame de Lafayette
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360048|title=Manon Lescaut|author=Abbé Prévost
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360055|title=Paul et Virginie|author=Bernardin de Saint-Pierre
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360062|title=Atala|author=Chateaubriand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360079|title=René|author=Chateaubriand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360086|title=Corinne|author=Madame de Staël
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070360093|title=Indiana|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005087|title=La Mare au diable|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005094|title=François le Champi|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005101|title=La Petite Fadette|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005118|title=Consuelo|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782253005125|title=Le Meunier d'Angibault|author=George Sand
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380932|title=Les Contemplations|author=Victor Hugo
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380949|title=La Légende des siècles|author=Victor Hugo
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380956|title=Les Châtiments|author=Victor Hugo
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380963|title=L'Art poétique|author=Nicolas Boileau
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380970|title=Les Caractères|author=Jean de La Bruyère
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380987|title=Maximes|author=La Rochefoucauld
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070380994|title=Pensées|author=Blaise Pascal
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070381001|title=Lettres persanes|author=Montesquieu
+[2025-10-27 17:20:48] ADD_BOOK|isbn=9782070381018|title=De l'esprit des lois|author=Montesquieu
+[2025-10-27 17:20:48] ADD_USER|id=USR001|name=Marie Dubois
+[2025-10-27 17:20:48] ADD_USER|id=USR002|name=Jean Martin
+[2025-10-27 17:20:48] ADD_USER|id=USR003|name=Sophie Lemaire
+[2025-10-27 17:20:48] ADD_USER|id=USR004|name=Pierre Durand
+[2025-10-27 17:20:48] ADD_USER|id=USR005|name=Claire Bernard
+[2025-10-27 17:20:48] ADD_USER|id=USR006|name=Marc Leroy
+[2025-10-27 17:20:48] ADD_USER|id=USR007|name=Anne Moreau
+[2025-10-27 17:20:48] ADD_USER|id=USR008|name=Paul Rousseau
+[2025-10-27 17:20:48] ADD_USER|id=USR009|name=Lisa Girard
+[2025-10-27 17:20:48] ADD_USER|id=USR010|name=Thomas Blanc
+[2025-10-27 17:20:48] ADD_USER|id=USR011|name=Julie Mercier
+[2025-10-27 17:20:48] ADD_USER|id=USR012|name=Henri Fabre
+[2025-10-27 17:20:48] ADD_USER|id=USR013|name=Sylvie Roux
+[2025-10-27 17:20:48] ADD_USER|id=USR014|name=Nicolas Petit
+[2025-10-27 17:20:48] ADD_USER|id=USR015|name=Alexandra Dumont
+[2025-10-27 17:20:48] ADD_USER|id=USR016|name=Maxime Fontaine
+[2025-10-27 17:20:48] ADD_USER|id=USR017|name=Isabelle Cordier
+[2025-10-27 17:20:48] ADD_USER|id=USR018|name=François Garnier
+[2025-10-27 17:20:48] ADD_USER|id=USR019|name=Émilie Perrin
+[2025-10-27 17:20:48] ADD_USER|id=USR020|name=Julien Moreau
+[2025-10-27 17:20:48] ADD_USER|id=USR021|name=Catherine Leclerc
+[2025-10-27 17:20:48] ADD_USER|id=USR022|name=Antoine Dubois
+[2025-10-27 17:20:48] ADD_USER|id=USR023|name=Nathalie Guerin
+[2025-10-27 17:20:48] ADD_USER|id=USR024|name=Olivier Masson
+[2025-10-27 17:20:48] ADD_USER|id=USR025|name=Valérie Simon
+[2025-10-27 17:23:42] ADD_BOOK|isbn=123|title=Allo|author=a
+[2025-10-27 17:32:42] DEL_BOOK|isbn=123
+[2025-10-27 17:38:09] ADD_BOOK|isbn=9780132350884|title=Clean Code|author=Robert C. Martin
+[2025-10-27 17:38:57] ADD_BOOK|isbn=978-0-13-235088-4|title=   clean   code|author=ROBERT c. martin
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070612758|title=Le Petit Prince|author=Antoine de Saint-Exupéry
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253096337|title=Les Misérables|author=Victor Hugo
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360024|title=L'Étranger|author=Albert Camus
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070413119|title=Madame Bovary|author=Gustave Flaubert
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070411326|title=Le Rouge et le Noir|author=Stendhal
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253004226|title=Germinal|author=Émile Zola
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253085119|title=Le Père Goriot|author=Honoré de Balzac
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380015|title=Candide|author=Voltaire
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070323087|title=Les Fleurs du mal|author=Charles Baudelaire
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253002864|title=Notre-Dame de Paris|author=Victor Hugo
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253004233|title=L'Assommoir|author=Émile Zola
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005070|title=Bel-Ami|author=Guy de Maupassant
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380763|title=Le Malade imaginaire|author=Molière
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380800|title=Phèdre|author=Jean Racine
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380848|title=Le Cid|author=Pierre Corneille
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380770|title=Tartuffe|author=Molière
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380787|title=Dom Juan|author=Molière
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380817|title=Andromaque|author=Jean Racine
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380855|title=Le Barbier de Séville|author=Beaumarchais
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380824|title=Britannicus|author=Jean Racine
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360031|title=La Princesse de Clèves|author=Madame de Lafayette
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360048|title=Manon Lescaut|author=Abbé Prévost
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360055|title=Paul et Virginie|author=Bernardin de Saint-Pierre
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360062|title=Atala|author=Chateaubriand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360079|title=René|author=Chateaubriand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360086|title=Corinne|author=Madame de Staël
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070360093|title=Indiana|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005087|title=La Mare au diable|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005094|title=François le Champi|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005101|title=La Petite Fadette|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005118|title=Consuelo|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782253005125|title=Le Meunier d'Angibault|author=George Sand
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380932|title=Les Contemplations|author=Victor Hugo
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380949|title=La Légende des siècles|author=Victor Hugo
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380956|title=Les Châtiments|author=Victor Hugo
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380963|title=L'Art poétique|author=Nicolas Boileau
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380970|title=Les Caractères|author=Jean de La Bruyère
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380987|title=Maximes|author=La Rochefoucauld
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070380994|title=Pensées|author=Blaise Pascal
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070381001|title=Lettres persanes|author=Montesquieu
+[2025-10-27 17:56:36] ADD_BOOK|isbn=9782070381018|title=De l'esprit des lois|author=Montesquieu
+[2025-10-27 17:56:36] ADD_BOOK|isbn=123|title=Allo|author=a
+[2025-10-27 17:56:36] ADD_USER|id=USR001|name=Marie Dubois
+[2025-10-27 17:56:36] ADD_USER|id=USR002|name=Jean Martin
+[2025-10-27 17:56:36] ADD_USER|id=USR003|name=Sophie Lemaire
+[2025-10-27 17:56:36] ADD_USER|id=USR004|name=Pierre Durand
+[2025-10-27 17:56:36] ADD_USER|id=USR005|name=Claire Bernard
+[2025-10-27 17:56:36] ADD_USER|id=USR006|name=Marc Leroy
+[2025-10-27 17:56:36] ADD_USER|id=USR007|name=Anne Moreau
+[2025-10-27 17:56:36] ADD_USER|id=USR008|name=Paul Rousseau
+[2025-10-27 17:56:36] ADD_USER|id=USR009|name=Lisa Girard
+[2025-10-27 17:56:36] ADD_USER|id=USR010|name=Thomas Blanc
+[2025-10-27 17:56:36] ADD_USER|id=USR011|name=Julie Mercier
+[2025-10-27 17:56:36] ADD_USER|id=USR012|name=Henri Fabre
+[2025-10-27 17:56:36] ADD_USER|id=USR013|name=Sylvie Roux
+[2025-10-27 17:56:36] ADD_USER|id=USR014|name=Nicolas Petit
+[2025-10-27 17:56:36] ADD_USER|id=USR015|name=Alexandra Dumont
+[2025-10-27 17:56:36] ADD_USER|id=USR016|name=Maxime Fontaine
+[2025-10-27 17:56:36] ADD_USER|id=USR017|name=Isabelle Cordier
+[2025-10-27 17:56:36] ADD_USER|id=USR018|name=François Garnier
+[2025-10-27 17:56:36] ADD_USER|id=USR019|name=Émilie Perrin
+[2025-10-27 17:56:36] ADD_USER|id=USR020|name=Julien Moreau
+[2025-10-27 17:56:36] ADD_USER|id=USR021|name=Catherine Leclerc
+[2025-10-27 17:56:36] ADD_USER|id=USR022|name=Antoine Dubois
+[2025-10-27 17:56:36] ADD_USER|id=USR023|name=Nathalie Guerin
+[2025-10-27 17:56:36] ADD_USER|id=USR024|name=Olivier Masson
+[2025-10-27 17:56:36] ADD_USER|id=USR025|name=Valérie Simon
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070612758|title=Le Petit Prince|author=Antoine de Saint-Exupéry
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253096337|title=Les Misérables|author=Victor Hugo
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360024|title=L'Étranger|author=Albert Camus
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070413119|title=Madame Bovary|author=Gustave Flaubert
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070411326|title=Le Rouge et le Noir|author=Stendhal
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253004226|title=Germinal|author=Émile Zola
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253085119|title=Le Père Goriot|author=Honoré de Balzac
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380015|title=Candide|author=Voltaire
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070323087|title=Les Fleurs du mal|author=Charles Baudelaire
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253002864|title=Notre-Dame de Paris|author=Victor Hugo
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253004233|title=L'Assommoir|author=Émile Zola
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005070|title=Bel-Ami|author=Guy de Maupassant
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380763|title=Le Malade imaginaire|author=Molière
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380800|title=Phèdre|author=Jean Racine
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380848|title=Le Cid|author=Pierre Corneille
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380770|title=Tartuffe|author=Molière
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380787|title=Dom Juan|author=Molière
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380817|title=Andromaque|author=Jean Racine
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380855|title=Le Barbier de Séville|author=Beaumarchais
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380824|title=Britannicus|author=Jean Racine
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360031|title=La Princesse de Clèves|author=Madame de Lafayette
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360048|title=Manon Lescaut|author=Abbé Prévost
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360055|title=Paul et Virginie|author=Bernardin de Saint-Pierre
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360062|title=Atala|author=Chateaubriand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360079|title=René|author=Chateaubriand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360086|title=Corinne|author=Madame de Staël
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070360093|title=Indiana|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005087|title=La Mare au diable|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005094|title=François le Champi|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005101|title=La Petite Fadette|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005118|title=Consuelo|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782253005125|title=Le Meunier d'Angibault|author=George Sand
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380932|title=Les Contemplations|author=Victor Hugo
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380949|title=La Légende des siècles|author=Victor Hugo
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380956|title=Les Châtiments|author=Victor Hugo
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380963|title=L'Art poétique|author=Nicolas Boileau
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380970|title=Les Caractères|author=Jean de La Bruyère
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380987|title=Maximes|author=La Rochefoucauld
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070380994|title=Pensées|author=Blaise Pascal
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070381001|title=Lettres persanes|author=Montesquieu
+[2025-10-27 17:58:12] ADD_BOOK|isbn=9782070381018|title=De l'esprit des lois|author=Montesquieu
+[2025-10-27 17:58:12] ADD_BOOK|isbn=123|title=Allo|author=a
+[2025-10-27 17:58:12] ADD_USER|id=USR001|name=Marie Dubois
+[2025-10-27 17:58:12] ADD_USER|id=USR002|name=Jean Martin
+[2025-10-27 17:58:12] ADD_USER|id=USR003|name=Sophie Lemaire
+[2025-10-27 17:58:12] ADD_USER|id=USR004|name=Pierre Durand
+[2025-10-27 17:58:12] ADD_USER|id=USR005|name=Claire Bernard
+[2025-10-27 17:58:12] ADD_USER|id=USR006|name=Marc Leroy
+[2025-10-27 17:58:12] ADD_USER|id=USR007|name=Anne Moreau
+[2025-10-27 17:58:12] ADD_USER|id=USR008|name=Paul Rousseau
+[2025-10-27 17:58:12] ADD_USER|id=USR009|name=Lisa Girard
+[2025-10-27 17:58:12] ADD_USER|id=USR010|name=Thomas Blanc
+[2025-10-27 17:58:12] ADD_USER|id=USR011|name=Julie Mercier
+[2025-10-27 17:58:12] ADD_USER|id=USR012|name=Henri Fabre
+[2025-10-27 17:58:12] ADD_USER|id=USR013|name=Sylvie Roux
+[2025-10-27 17:58:12] ADD_USER|id=USR014|name=Nicolas Petit
+[2025-10-27 17:58:12] ADD_USER|id=USR015|name=Alexandra Dumont
+[2025-10-27 17:58:12] ADD_USER|id=USR016|name=Maxime Fontaine
+[2025-10-27 17:58:12] ADD_USER|id=USR017|name=Isabelle Cordier
+[2025-10-27 17:58:12] ADD_USER|id=USR018|name=François Garnier
+[2025-10-27 17:58:12] ADD_USER|id=USR019|name=Émilie Perrin
+[2025-10-27 17:58:12] ADD_USER|id=USR020|name=Julien Moreau
+[2025-10-27 17:58:12] ADD_USER|id=USR021|name=Catherine Leclerc
+[2025-10-27 17:58:12] ADD_USER|id=USR022|name=Antoine Dubois
+[2025-10-27 17:58:12] ADD_USER|id=USR023|name=Nathalie Guerin
+[2025-10-27 17:58:12] ADD_USER|id=USR024|name=Olivier Masson
+[2025-10-27 17:58:12] ADD_USER|id=USR025|name=Valérie Simon
+[2025-10-27 17:58:56] ADD_BOOK|isbn=9780441172719|title=Dune|author=Frank Herbert
+[2025-10-27 18:01:15] ADD_BOOK|isbn=9780000000002|title=Dune|author=Autre Auteur
+[2025-10-27 18:01:56] ADD_BOOK|isbn=9780000000003|title=Les Enfants de Dune|author=Frank Herbert
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070612758|title=Le Petit Prince|author=Antoine de Saint-Exupéry
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253096337|title=Les Misérables|author=Victor Hugo
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360024|title=L'Étranger|author=Albert Camus
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070413119|title=Madame Bovary|author=Gustave Flaubert
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070411326|title=Le Rouge et le Noir|author=Stendhal
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253004226|title=Germinal|author=Émile Zola
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253085119|title=Le Père Goriot|author=Honoré de Balzac
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380015|title=Candide|author=Voltaire
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070323087|title=Les Fleurs du mal|author=Charles Baudelaire
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253002864|title=Notre-Dame de Paris|author=Victor Hugo
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253004233|title=L'Assommoir|author=Émile Zola
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005070|title=Bel-Ami|author=Guy de Maupassant
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380763|title=Le Malade imaginaire|author=Molière
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380800|title=Phèdre|author=Jean Racine
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380848|title=Le Cid|author=Pierre Corneille
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380770|title=Tartuffe|author=Molière
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380787|title=Dom Juan|author=Molière
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380817|title=Andromaque|author=Jean Racine
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380855|title=Le Barbier de Séville|author=Beaumarchais
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380824|title=Britannicus|author=Jean Racine
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360031|title=La Princesse de Clèves|author=Madame de Lafayette
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360048|title=Manon Lescaut|author=Abbé Prévost
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360055|title=Paul et Virginie|author=Bernardin de Saint-Pierre
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360062|title=Atala|author=Chateaubriand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360079|title=René|author=Chateaubriand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360086|title=Corinne|author=Madame de Staël
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070360093|title=Indiana|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005087|title=La Mare au diable|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005094|title=François le Champi|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005101|title=La Petite Fadette|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005118|title=Consuelo|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782253005125|title=Le Meunier d'Angibault|author=George Sand
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380932|title=Les Contemplations|author=Victor Hugo
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380949|title=La Légende des siècles|author=Victor Hugo
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380956|title=Les Châtiments|author=Victor Hugo
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380963|title=L'Art poétique|author=Nicolas Boileau
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380970|title=Les Caractères|author=Jean de La Bruyère
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380987|title=Maximes|author=La Rochefoucauld
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070380994|title=Pensées|author=Blaise Pascal
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070381001|title=Lettres persanes|author=Montesquieu
+[2025-10-27 18:02:41] ADD_BOOK|isbn=9782070381018|title=De l'esprit des lois|author=Montesquieu
+[2025-10-27 18:02:41] ADD_BOOK|isbn=123|title=Allo|author=a
+[2025-10-27 18:02:41] ADD_USER|id=USR001|name=Marie Dubois
+[2025-10-27 18:02:41] ADD_USER|id=USR002|name=Jean Martin
+[2025-10-27 18:02:41] ADD_USER|id=USR003|name=Sophie Lemaire
+[2025-10-27 18:02:41] ADD_USER|id=USR004|name=Pierre Durand
+[2025-10-27 18:02:41] ADD_USER|id=USR005|name=Claire Bernard
+[2025-10-27 18:02:41] ADD_USER|id=USR006|name=Marc Leroy
+[2025-10-27 18:02:41] ADD_USER|id=USR007|name=Anne Moreau
+[2025-10-27 18:02:41] ADD_USER|id=USR008|name=Paul Rousseau
+[2025-10-27 18:02:41] ADD_USER|id=USR009|name=Lisa Girard
+[2025-10-27 18:02:41] ADD_USER|id=USR010|name=Thomas Blanc
+[2025-10-27 18:02:41] ADD_USER|id=USR011|name=Julie Mercier
+[2025-10-27 18:02:41] ADD_USER|id=USR012|name=Henri Fabre
+[2025-10-27 18:02:41] ADD_USER|id=USR013|name=Sylvie Roux
+[2025-10-27 18:02:41] ADD_USER|id=USR014|name=Nicolas Petit
+[2025-10-27 18:02:41] ADD_USER|id=USR015|name=Alexandra Dumont
+[2025-10-27 18:02:41] ADD_USER|id=USR016|name=Maxime Fontaine
+[2025-10-27 18:02:41] ADD_USER|id=USR017|name=Isabelle Cordier
+[2025-10-27 18:02:41] ADD_USER|id=USR018|name=François Garnier
+[2025-10-27 18:02:41] ADD_USER|id=USR019|name=Émilie Perrin
+[2025-10-27 18:02:41] ADD_USER|id=USR020|name=Julien Moreau
+[2025-10-27 18:02:41] ADD_USER|id=USR021|name=Catherine Leclerc
+[2025-10-27 18:02:41] ADD_USER|id=USR022|name=Antoine Dubois
+[2025-10-27 18:02:41] ADD_USER|id=USR023|name=Nathalie Guerin
+[2025-10-27 18:02:41] ADD_USER|id=USR024|name=Olivier Masson
+[2025-10-27 18:02:41] ADD_USER|id=USR025|name=Valérie Simon
+[2025-10-27 18:03:11] ADD_BOOK|isbn=9780000000004|title=dune|author=FRANK herbert

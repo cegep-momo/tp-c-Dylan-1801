@@ -74,7 +74,7 @@ int main() {
                 string isbn = getInput("Entrez l'ISBN du livre : ");
 
                 if (library.hasDuplicate(title, author, isbn)) {
-                    cout << "Erreur : un doublon détecté (même titre, auteur et ISBN).\n";
+                    cout << "Erreur : un doublon détecté (même titre, auteur et ISBN/ même ISBN ou même Titre + Auteur).\n";
                 } else {
                     Book newBook(title, author, isbn);
                     library.addBook(newBook);

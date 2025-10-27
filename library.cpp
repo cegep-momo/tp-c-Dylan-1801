@@ -272,7 +272,7 @@ static std::string normalizeISBN(const std::string& isbn) {
     return res;
 }
 
-// Vérifie si un livre avec même titre + auteur + ISBN existe déjà
+// Vérifie si un livre existe déjà par ISBN ou par Titre + Auteur
 bool Library::hasDuplicate(const std::string& title,
                            const std::string& author,
                            const std::string& isbn) const {
@@ -281,9 +281,12 @@ bool Library::hasDuplicate(const std::string& title,
     std::string iNorm = normalizeISBN(isbn);
 
     for (const auto& b : books) {
-        if (toLower(trim(b->getTitle())) == tNorm &&
-            toLower(trim(b->getAuthor())) == aNorm &&
-            normalizeISBN(b->getISBN()) == iNorm) {
+        const std::string bt = toLower(trim(b->getTitle()));
+        const std::string ba = toLower(trim(b->getAuthor()));
+        const std::string bi = normalizeISBN(b->getISBN());
+
+        // Doublon si meme ISBN, ou si même Titre + Auteur
+        if (bi == iNorm || (bt == tNorm && ba == aNorm)) {
             return true;
         }
     }

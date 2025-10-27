@@ -6,7 +6,7 @@
 #include <filesystem>
 
 #ifndef DATA_DIR
-#define DATA_DIR "data" // secours si CMake ne définit pas DATA_DIR
+#define DATA_DIR "data" // si non défini, utiliser "data"
 #endif
 
 static std::string nowTimestamp() {

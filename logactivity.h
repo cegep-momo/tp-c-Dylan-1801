@@ -3,11 +3,10 @@
 
 #include <string>
 
-// Appends a single log line with an ISO-like timestamp to data/activity.log.
-// The function will create the data/ folder if needed.
+// fonction générique de log d'activité
 void logActivity(const std::string& line);
 
-// Convenience helpers:
+// fonctions spécifiques de log pour les différentes actions
 void logAddBook(const std::string& title, const std::string& author, const std::string& isbn);
 void logDeleteBook(const std::string& isbn);
 void logBorrow(const std::string& isbn, const std::string& userId, const std::string& userName);
